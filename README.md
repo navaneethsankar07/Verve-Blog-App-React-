@@ -1,16 +1,81 @@
-# React + Vite
+# ![Verve Blog](https://img.icons8.com/ios-filled/50/000000/blog.png) Verve Blog App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react&logoColor=white)](https://reactjs.org/) 
+[![Firebase](https://img.shields.io/badge/Firebase-9.22.1-orange?logo=firebase&logoColor=white)](https://firebase.google.com/) 
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.3.2-blue?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) 
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-Currently, two official plugins are available:
+A modern blogging platform built with **React**, **Firebase**, and **Tailwind CSS**. Users can read blogs without logging in, but creating, editing, and deleting posts requires authentication. Sign in via email/password or Google account.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## **🌟 Features**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Public Home Page**: Explore all blog posts without signing in.
+- **Authentication**:
+  - Email & Password sign up/login
+  - Google Sign-In
+- **Blog Management**:
+  - Create new posts
+  - Edit/Delete your own posts in **My Blogs**
+- **Responsive Design**: Works seamlessly on desktop & mobile.
+- **Notifications**: User feedback using **React Toastify**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## **📄 Pages**
+
+| Page | Description |
+|------|-------------|
+| **Home** | Lists all posts from all users. |
+| **My Blogs** | Displays posts by the logged-in user with edit/delete options. |
+| **Create Post** | Allows creating new blog posts. |
+
+---
+
+## **🛠 Getting Started**
+
+### **Prerequisites**
+- Node.js installed
+- Firebase account
+- Git installed
+
+### **Installation**
+```bash
+git clone <your-repo-url>
+cd <your-project-folder>
+npm install
+Firebase Setup
+Create a Firebase project.
+
+Enable Authentication (Email/Password & Google Sign-In).
+
+Enable Firestore Database.
+
+Replace Firebase config in your project with your credentials.
+
+Run Locally
+npm start
+Visit http://localhost:5173.
+
+firebase deploy
+🔒 Security
+Public users can read all posts.
+
+Only authenticated users can create, edit, delete their own posts.
+
+Firestore security rules enforce access control.
+
+💻 Technologies Used
+React
+
+Firebase (Authentication & Firestore)
+
+Tailwind CSS
+
+React Router DOM
+
+React Toastify
+
+📜 License
+This project is licensed under the MIT License.
