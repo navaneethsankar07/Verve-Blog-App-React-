@@ -42,9 +42,10 @@ A modern blogging platform built with **React**, **Firebase**, and **Tailwind CS
 
 ### **Installation**
 ```bash
-git clone <your-repo-url>
-cd <your-project-folder>
+git clone [<your-repo-url>](https://github.com/navaneethsankar07/Verve-Blog-App-React-.git)
+cd Blog-Project
 npm install
+
 Firebase Setup
 Create a Firebase project.
 
